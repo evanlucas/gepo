@@ -1,0 +1,36 @@
+{
+  "name": "gepo",
+  "version": "0.0.0",
+  "description": "Normalize a git repository for opening in a browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec test.js",
+    "cover": "./scripts/cover.sh"
+  },
+  "bin": {
+    "gepo": "./bin/cmd.js"
+  },
+  "license": "MIT",
+  "keywords": [
+    "git",
+    "repo",
+    "normalize",
+    "url",
+    "hbc"
+  ],
+  "author": "Evan Lucas <evanlucas@me.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "jostle": "0.0.1",
+    "mocha": "~1.18.2",
+    "should": "~3.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/evanlucas/gepo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evanlucas/gepo/issues"
+  },
+  "homepage": "https://github.com/evanlucas/gepo"
+}
