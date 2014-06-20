@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec test.js",
-    "cover": "./scripts/cover.sh"
+    "cover": "mocha -r blanket -R json-cov | jostle",
   },
   "bin": {
     "gepo": "./bin/cmd.js"
@@ -21,9 +21,9 @@
   "author": "Evan Lucas <evanlucas@me.com>",
   "dependencies": {},
   "devDependencies": {
-    "jostle": "0.0.1",
     "mocha": "~1.18.2",
     "should": "~3.3.1"
+    "jostle": "~1.0.0",
   },
   "repository": {
     "type": "git",
