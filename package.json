@@ -35,5 +35,11 @@
   "bugs": {
     "url": "https://github.com/evanlucas/gepo/issues"
   },
-  "homepage": "https://github.com/evanlucas/gepo"
+  "homepage": "https://github.com/evanlucas/gepo",
+  "config": {
+    "blanket": {
+      "pattern": "/lib/",
+      "data-cover-never": "node_modules"
+    }
+  }
 }
