@@ -6,6 +6,8 @@
   "scripts": {
     "test": "mocha -R spec test.js",
     "cover": "mocha -r blanket -R json-cov | jostle",
+    "circle": "mkdir -p $CIRCLE_ARTIFACTS && mocha -r blanket -R html-cov > $CIRCLE_ARTIFACTS/coverage.html",
+    "coveralls": "mocha -r blanket -R mocha-lcov-reporter | coveralls"
   },
   "bin": {
     "gepo": "./bin/cmd.js"
