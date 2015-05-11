@@ -1,0 +1,8 @@
+gepo - normalize a git repository url to open in a browser
+
+  usage: gepo <repository url>
+
+  examples:
+
+    $ gepo git@github.com:iojs/io.js
+    // => 'https://github.com/iojs/io.js'

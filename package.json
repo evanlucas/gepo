@@ -19,7 +19,9 @@
     "hbc"
   ],
   "author": "Evan Lucas <evanlucas@me.com>",
-  "dependencies": {},
+  "dependencies": {
+    "help": "~2.0.0"
+  },
   "devDependencies": {
     "istanbul": "~0.3.14",
     "mocha": "~1.20.1",

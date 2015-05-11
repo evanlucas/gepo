@@ -2,9 +2,10 @@
 
 var repo = require('../')
   , args = process.argv.splice(2)
+  , help = require('help')()
 
 if (!args.length) {
-  help(1)
+  return help(1)
 }
 
 var command = args.shift()
@@ -17,11 +18,4 @@ switch (command) {
     break
   default:
     console.log(repo(command))
-}
-
-function help(code) {
-  console.log()
-  console.log(' usage: gitrepo <repository>')
-  console.log()
-  process.exit(code || 0)
 }
