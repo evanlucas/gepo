@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec test.js",
-    "cover": "mocha -r blanket -R json-cov | jostle",
-    "circle": "mkdir -p $CIRCLE_ARTIFACTS && mocha -r blanket -R html-cov > $CIRCLE_ARTIFACTS/coverage.html",
-    "coveralls": "mocha -r blanket -R mocha-lcov-reporter | coveralls"
+    "cover": "istanbul cover _mocha -- -R spec test.js"
   },
   "bin": {
     "gepo": "./bin/cmd.js"
@@ -23,11 +21,8 @@
   "author": "Evan Lucas <evanlucas@me.com>",
   "dependencies": {},
   "devDependencies": {
-    "blanket": "~1.1.6",
-    "coveralls": "~2.10.0",
-    "jostle": "~1.0.0",
+    "istanbul": "~0.3.14",
     "mocha": "~1.20.1",
-    "mocha-lcov-reporter": "0.0.1",
     "should": "~4.0.4"
   },
   "repository": {
