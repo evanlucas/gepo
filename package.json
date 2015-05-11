@@ -1,6 +1,6 @@
 {
   "name": "gepo",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Normalize a git repository for opening in a browser",
   "main": "index.js",
   "scripts": {
